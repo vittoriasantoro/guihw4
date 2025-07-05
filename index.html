@@ -1,0 +1,63 @@
+<!--
+   File: index.html
+   GUI Assignment: HW4
+   Description: Multiplication Table Website with JQuery
+   Vittoria Santoro, UMass Lowell Computer Science, vittoria_santoro@student.uml.edu
+   Copyright (c) 2025 by Santoro. All rights reserved. May be freely copied or
+   excerpted for educational purposes with credit to the author.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- import jquery libraries -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Input Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div class="container">
+    <h3>Please enter the table ranges</h3>
+    <form id="tableForm">
+        <div class="form-group">
+            <label for="minCol">Minimum Column Value</label>
+            <input type="number" id="minCol" name="minCol">
+        </div>
+        <div id="minColSlider" class="slider"></div>
+
+        <div class="form-group">
+            <label for="maxCol">Maximum Column Value</label>
+            <input type="number" id="maxCol" name="maxCol">
+        </div>
+        <div id="maxColSlider" class="slider"></div>
+
+        <div class="form-group">
+            <label for="minRow">Minimum Row Value</label>
+            <input type="number" id="minRow" name="minRow">
+        </div>
+        <div id="minRowSlider" class="slider"></div>
+
+        <div class="form-group">
+            <label for="maxRow">Maximum Row Value</label>
+            <input type="number" id="maxRow" name="maxRow">
+        </div>
+        <div id="maxRowSlider" class="slider"></div>
+
+        <button id="makeTable" type="submit">Submit</button>
+        <button type="button" id="clear">Clear All</button>
+    </form>
+
+    <div id="tabs" style="display:none;">
+        <ul></ul>
+    </div>
+
+</div>
+</body>
+</html>
+
+<!-- JavaScript -->
+<script src="js/script.js"></script>
